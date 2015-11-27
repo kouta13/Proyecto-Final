@@ -16,5 +16,11 @@ body{
 main{
   border: solid 1px #82ada4;
   background-color: white;
+}
+footer{
+  background-color: #82e1fa;
+}
+.sidebar {
+  position: fixed;
 
 }
