@@ -21,6 +21,45 @@ body{
   float: left;
   display: none;
 }
+#img-tel{
+  display: none;
+}
+#sec-cont{
+  width: 100%;
+  overflow: auto;
+}
+.cont1{
+  width: 40%;
+  float: left;
+
+}
+.cont2{
+  width: 40%;
+  float: left;
+  
+}
+#img-cont{
+  border: 2px solid #011F36;
+  margin: 0;
+  padding: 0;
+  border-radius: 800px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+#icon-face{
+  color: #0A6EBB;
+}
+#icon-gplus{
+  color: #651008;
+}
+#icon-git{
+  color: #5e27ad;
+}
+#icon-what{
+  color: #117e04;
+}
+
 p{
   text-align: justify;
 }
