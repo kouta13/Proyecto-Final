@@ -7,4 +7,11 @@ $(document).ready(function(){
     $( "#img-tel" ).slideToggle( "slow", function() {
     });
   });
+  RPGJS.defines({
+    canvas: "canvas_id"
+}).ready(function() {
+
+    RPGJS.Scene.map();
+
+});
 });
