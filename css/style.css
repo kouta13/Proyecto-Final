@@ -9,24 +9,35 @@ body{
   border: 0;
 }
 .like{
-  border: solid 3px #050225;
+  border: solid 3px #011F36;
+  background-color: white;
   border-radius: 35px
 }
-/*.jumbotron{
-  background-image: url(../images/FF_logo.png);
-  background-size: cover;
-}*/
+#serie{
+  height: auto;
+  overflow: auto;
+}
+#img-cron{
+  float: left;
+  display: none;
+}
 p{
   text-align: justify;
 }
+.main{
+  background-color: #0A6EBB;
+  color: black;
+}
 main{
-  border: solid 1px #82ada4;
+  border: solid 3px #011F36;
   background-color: white;
 }
 footer{
   background-color: #82e1fa;
+  text-align: right;
 }
 .sidebar {
   position: fixed;
+  border: solid 1px #82e1fa;
 
 }
