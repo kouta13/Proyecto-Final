@@ -5,6 +5,7 @@
     <title>Projecto Final</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -35,7 +36,7 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1>Final Project</h1>
+        <h1>Final Project <i class="fa fa-fort-awesome"></i></h1>
       </div>
 
       <main>
@@ -68,6 +69,15 @@
               <img src="images/linea-crono.png" alt=""/>
               <br/>
               <h3>Gráficos y tecnología</h3>
+              <p>
+                Debido a las limitaciones de los primeros sistemas, los sprites de los personajes principales eran representados en la pantalla principal sin mucho detalle, mientras que en las pantallas de batalla, aparecerían versiones más detalladas y más completas de todos los personajes en una perspectiva de vista lateral. Esto fue mejorado en los remakes que salieron años después, sobre todo en la versión de PlayStation, la cual mejoró los gráficos, sonido, y se agregó una intro en FMV de excelente calidad. Más tarde haciéndose un remake completo del estilo FF IX usándose la Nintendo DS
+                El mismo sistema básico (Excepto por el sistema ATB) fue reutilizado para las versiones de Super Famicom (conocido internacionalmente como Super Nintendo Entertainment System) en los siguientes tres juegos, Final Fantasy IV, Final Fantasy V, y Final Fantasy VI. Estos juegos utilizaron efectos y gráficos más actualizados, así como una música y un sonido de más alta calidad que los juegos anteriores, pero de alguna manera eran muy similares a sus precursores en cuanto a diseño básico.
+                El texto de las versiones japonesas de los primeros juegos de Final Fantasy fue compuesto solo por caracteres kana. Por lo tanto, gran parte del diálogo era simplemente textos agrupados, lo que lo hacía especialmente difícil de comprender para los jugadores más viejos y los extranjeros que aprendían japonés. Finalmente, en Final Fantasy V, los juegos comenzaron a utilizar kanji. Esto continuaría evolucionando en Final Fantasy VI, y la tendencia continuaría haciendo los juegos mucho más eruditos.
+              </p>
+              <br/>
+              <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+              <div id="player"></div>
+
               <br/>
               <h3>Saga principal</h3>
               <ul>
@@ -116,56 +126,20 @@
                 <li>Final Fantasy XV (2016 - PS4 - Xbox One)</li>
               </ul>
               <br/>
-              <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-              <div id="player"></div>
+              <div class="like">
+                <p align="center">
+                  &nbsp;&nbsp;&nbsp;<i class="fa fa-thumbs-o-up fa-5x"></i>&nbsp;
+                  <iframe src="http://www.facebook.com/plugins/like.php? href=https://www.facebook.com/FinalFantasy/likes"
+                  scrolling="no" frameborder="0"
+                  style=border:none;width:450px;height:66px></iframe>
+                </p>
+              </div>
 
-              <script>
-                // 2. This code loads the IFrame Player API code asynchronously.
-                var tag = document.createElement('script');
 
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                // 3. This function creates an <iframe> (and YouTube player)
-                //    after the API code downloads.
-                var player;
-                function onYouTubeIframeAPIReady() {
-                  player = new YT.Player('player', {
-                    height: '390',
-                    width: '640',
-                    videoId: 'EFUx6xH1VlA',
-                    events: {
-                      'onReady': onPlayerReady,
-                      'onStateChange': onPlayerStateChange
-                    }
-                  });
-                }
-
-                // 4. The API will call this function when the video player is ready.
-                function onPlayerReady(event) {
-                  event.target.playVideo();
-                }
-
-                // 5. The API calls this function when the player's state changes.
-                //    The function indicates that when playing a video (state=1),
-                //    the player should play for six seconds and then stop.
-                var done = false;
-                function onPlayerStateChange(event) {
-                  if (event.data == YT.PlayerState.PLAYING && !done) {
-                    setTimeout(stopVideo, 6000);
-                    done = true;
-                  }
-                }
-                function stopVideo() {
-                  player.stopVideo();
-                }
-              </script>
               <br/>
             </div>
           </div>
         </div>
-
 
       </main>
       <footer>
@@ -175,6 +149,66 @@
     <script>js/script.js</script>
     <script>js/jquery-1.11.3.js</script>
     <script>js/bootstrap.min.js</script>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '_ajDPjrvBaA',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 0000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    <!-- scripts facebook -->
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '444683679057455',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
   </body>
 </html>

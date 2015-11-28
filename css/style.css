@@ -8,11 +8,17 @@ body{
 .navbar-fixed-top {
   border: 0;
 }
+.like{
+  border: solid 3px #050225;
+  border-radius: 35px
+}
 /*.jumbotron{
   background-image: url(../images/FF_logo.png);
   background-size: cover;
 }*/
-
+p{
+  text-align: justify;
+}
 main{
   border: solid 1px #82ada4;
   background-color: white;
